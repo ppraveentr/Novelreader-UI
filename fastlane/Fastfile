@@ -1,0 +1,64 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "SwiftLane"
+  lane :swift_lint do
+    swiftlint(
+        mode: :lint,
+        config_file: ".swiftlint.yml",
+        raise_if_swiftlint_error: true,
+        output_file: "fastlane/swiftlint.result.json"
+    )
+  end
+  
+  desc "Build"
+  lane :build_lane do
+    scan(
+        derived_data_path: "derivedData",
+        build_for_testing: true,
+        xcargs: "CI=true")
+  end
+  
+  desc "Only Testing"
+  lane :only_unit_test do
+    scan(
+        derived_data_path: "derivedData",
+        only_testing: ["NovelReaderTests"],
+        test_without_building: true)
+  end
+  
+  lane :only_ui_test do
+    scan(
+        derived_data_path: "derivedData",
+        only_testing: ["NovelReaderUITests"],
+        test_without_building: true)
+  end
+  
+  desc "Build and run Unit & UI Tests"
+  lane :build_tests do
+    build_lane
+    only_unit_test
+    only_ui_test
+  end
+  
+  desc "Reports"
+  lane :reports do
+    swift_lint
+    build_tests
+  end
+end

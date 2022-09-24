@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "EDBB7027-1510-43E9-AF39-17C56D84C9B4",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:NovelReader.xcodeproj",
+      "identifier" : "DE73DEDC28DF99BB00EEDCFA",
+      "name" : "NovelReader"
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:NovelReader.xcodeproj",
+        "identifier" : "DE73DEF228DF99BE00EEDCFA",
+        "name" : "NovelReaderTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:NovelReader.xcodeproj",
+        "identifier" : "DE73DEFC28DF99BE00EEDCFA",
+        "name" : "NovelReaderUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
