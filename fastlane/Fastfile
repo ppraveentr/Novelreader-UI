@@ -17,7 +17,7 @@ default_platform(:ios)
 
 platform :ios do
   desc "SwiftLane"
-  lane :swift_lint do
+  lane :lint do
     swiftlint(
         mode: :lint,
         config_file: ".swiftlint.yml",
@@ -58,7 +58,7 @@ platform :ios do
   
   desc "Reports"
   lane :reports do
-    swift_lint
+    lint
     build_tests
   end
 end

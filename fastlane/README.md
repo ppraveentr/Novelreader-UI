@@ -15,10 +15,10 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## iOS
 
-### ios lint
+### ios swift_lint
 
 ```sh
-[bundle exec] fastlane ios lint
+[bundle exec] fastlane ios swift_lint
 ```
 
 SwiftLane
@@ -47,13 +47,13 @@ Only Testing
 
 
 
-### ios unit_tests
+### ios build_tests
 
 ```sh
-[bundle exec] fastlane ios unit_tests
+[bundle exec] fastlane ios build_tests
 ```
 
-Unit Tests
+Build and run Unit & UI Tests
 
 ### ios reports
 
