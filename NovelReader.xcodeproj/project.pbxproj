@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE16293B290492E600DD3E36 /* Theme.json in Resources */ = {isa = PBXBuildFile; fileRef = DE16293A290492E600DD3E36 /* Theme.json */; };
+		DE1629512904A22000DD3E36 /* MobileCoreUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1629502904A22000DD3E36 /* MobileCoreUI */; };
 		DE73DEE128DF99BB00EEDCFA /* NovelReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEE028DF99BB00EEDCFA /* NovelReaderApp.swift */; };
 		DE73DEE328DF99BB00EEDCFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEE228DF99BB00EEDCFA /* ContentView.swift */; };
 		DE73DEE528DF99BD00EEDCFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE73DEE428DF99BD00EEDCFA /* Assets.xcassets */; };
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE16293A290492E600DD3E36 /* Theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Theme.json; sourceTree = "<group>"; };
 		DE73DEDD28DF99BB00EEDCFA /* NovelReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NovelReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE73DEE028DF99BB00EEDCFA /* NovelReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelReaderApp.swift; sourceTree = "<group>"; };
 		DE73DEE228DF99BB00EEDCFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE1629512904A22000DD3E36 /* MobileCoreUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,15 +86,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE1629342904924500DD3E36 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		DE1629362904929100DD3E36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE162939290492E600DD3E36 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE73DEEB28DF99BD00EEDCFA /* NovelReader.xcdatamodeld */,
+				DE73DEE428DF99BD00EEDCFA /* Assets.xcassets */,
+				DE16293A290492E600DD3E36 /* Theme.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE16293C2904933E00DD3E36 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DE73DEE928DF99BD00EEDCFA /* PersistenceController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		DE73DED428DF99BB00EEDCFA = {
 			isa = PBXGroup;
 			children = (
+				DE1629342904924500DD3E36 /* Packages */,
 				DE73DF1328DF9F5900EEDCFA /* Git */,
 				DE73DF1228DF9BCE00EEDCFA /* NovelReader.xctestplan */,
 				DE73DEDF28DF99BB00EEDCFA /* NovelReader */,
 				DE73DEF628DF99BE00EEDCFA /* NovelReaderTests */,
 				DE73DF0028DF99BE00EEDCFA /* NovelReaderUITests */,
 				DE73DEDE28DF99BB00EEDCFA /* Products */,
+				DE1629362904929100DD3E36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,12 +145,11 @@
 		DE73DEDF28DF99BB00EEDCFA /* NovelReader */ = {
 			isa = PBXGroup;
 			children = (
+				DE16293C2904933E00DD3E36 /* CoreData */,
+				DE162939290492E600DD3E36 /* Resources */,
 				DE73DEE028DF99BB00EEDCFA /* NovelReaderApp.swift */,
 				DE73DEE228DF99BB00EEDCFA /* ContentView.swift */,
-				DE73DEE428DF99BD00EEDCFA /* Assets.xcassets */,
-				DE73DEE928DF99BD00EEDCFA /* PersistenceController.swift */,
 				DE73DEEE28DF99BD00EEDCFA /* Info.plist */,
-				DE73DEEB28DF99BD00EEDCFA /* NovelReader.xcdatamodeld */,
 				DE73DEE628DF99BD00EEDCFA /* Preview Content */,
 			);
 			path = NovelReader;
@@ -172,6 +209,9 @@
 			dependencies = (
 			);
 			name = NovelReader;
+			packageProductDependencies = (
+				DE1629502904A22000DD3E36 /* MobileCoreUI */,
+			);
 			productName = NovelReader;
 			productReference = DE73DEDD28DF99BB00EEDCFA /* NovelReader.app */;
 			productType = "com.apple.product-type.application";
@@ -244,6 +284,9 @@
 				Base,
 			);
 			mainGroup = DE73DED428DF99BB00EEDCFA;
+			packageReferences = (
+				DE16294F2904A22000DD3E36 /* XCRemoteSwiftPackageReference "MobileCoreUI" */,
+			);
 			productRefGroup = DE73DEDE28DF99BB00EEDCFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE16293B290492E600DD3E36 /* Theme.json in Resources */,
 				DE73DEE828DF99BD00EEDCFA /* Preview Assets.xcassets in Resources */,
 				DE73DEE528DF99BD00EEDCFA /* Assets.xcassets in Resources */,
 			);
@@ -284,6 +328,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		DE73DF1128DF9A1700EEDCFA /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -637,6 +682,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE16294F2904A22000DD3E36 /* XCRemoteSwiftPackageReference "MobileCoreUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ppraveentr/MobileCoreUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE1629502904A22000DD3E36 /* MobileCoreUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE16294F2904A22000DD3E36 /* XCRemoteSwiftPackageReference "MobileCoreUI" */;
+			productName = MobileCoreUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DE73DEEB28DF99BD00EEDCFA /* NovelReader.xcdatamodeld */ = {

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mobilecoreui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ppraveentr/MobileCoreUI.git",
+      "state" : {
+        "revision" : "ae198896ef8372c947441a048a34237b3ece4f4b",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import Theme
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -24,6 +25,7 @@ struct ContentView: View {
                         Text("Item at \(item.timestamp!, formatter: itemFormatter)")
                     } label: {
                         Text(item.timestamp!, formatter: itemFormatter)
+                            .setThemeStyle("Text15B")
                     }
                 }
                 .onDelete(perform: deleteItems)
@@ -38,8 +40,10 @@ struct ContentView: View {
                     }
                 }
             }
-            Text("Select an item")
         }
+        .navigationTitle("Select an Item")
+        Text("Select an item")
+            .setThemeStyle("Text15R")
     }
 
     private func addItem() {
