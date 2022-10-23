@@ -27,10 +27,5 @@ struct NovelReaderApp: App {
 
 private func loadThemeModel() async {
     guard let lightTheme = try? Data.contentOfFile("Theme.json") else { return }
-    try? ThemesManager.shared.loadThemeModel(lightTheme)
-}
-
-private func themeData(_ name: String) throws -> Data? {
-    guard let url = Bundle.main.url(forResource: name, withExtension: "json") else { return nil }
-    return try Data(contentsOf: url)
+    try? ThemesManager.loadThemeModel(lightTheme)
 }

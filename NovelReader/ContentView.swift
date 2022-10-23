@@ -25,7 +25,7 @@ struct ContentView: View {
                         Text("Item at \(item.timestamp!, formatter: itemFormatter)")
                     } label: {
                         Text(item.timestamp!, formatter: itemFormatter)
-                            .setThemeStyle("Text15B")
+                            .style("Text15B")
                     }
                 }
                 .onDelete(perform: deleteItems)
@@ -43,7 +43,7 @@ struct ContentView: View {
         }
         .navigationTitle("Select an Item")
         Text("Select an item")
-            .setThemeStyle("Text15R")
+            .style("Text15R")
     }
 
     private func addItem() {

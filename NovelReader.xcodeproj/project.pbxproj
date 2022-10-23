@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE16293B290492E600DD3E36 /* Theme.json in Resources */ = {isa = PBXBuildFile; fileRef = DE16293A290492E600DD3E36 /* Theme.json */; };
-		DE1629512904A22000DD3E36 /* MobileCoreUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1629502904A22000DD3E36 /* MobileCoreUI */; };
+		DE54810B2904E33A001A451F /* MobileCoreUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE54810A2904E33A001A451F /* MobileCoreUI */; };
 		DE73DEE128DF99BB00EEDCFA /* NovelReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEE028DF99BB00EEDCFA /* NovelReaderApp.swift */; };
 		DE73DEE328DF99BB00EEDCFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEE228DF99BB00EEDCFA /* ContentView.swift */; };
 		DE73DEE528DF99BD00EEDCFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE73DEE428DF99BD00EEDCFA /* Assets.xcassets */; };
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE1629512904A22000DD3E36 /* MobileCoreUI in Frameworks */,
+				DE54810B2904E33A001A451F /* MobileCoreUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +210,7 @@
 			);
 			name = NovelReader;
 			packageProductDependencies = (
-				DE1629502904A22000DD3E36 /* MobileCoreUI */,
+				DE54810A2904E33A001A451F /* MobileCoreUI */,
 			);
 			productName = NovelReader;
 			productReference = DE73DEDD28DF99BB00EEDCFA /* NovelReader.app */;
@@ -285,7 +285,7 @@
 			);
 			mainGroup = DE73DED428DF99BB00EEDCFA;
 			packageReferences = (
-				DE16294F2904A22000DD3E36 /* XCRemoteSwiftPackageReference "MobileCoreUI" */,
+				DE5481092904E33A001A451F /* XCRemoteSwiftPackageReference "MobileCoreUI" */,
 			);
 			productRefGroup = DE73DEDE28DF99BB00EEDCFA /* Products */;
 			projectDirPath = "";
@@ -684,7 +684,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DE16294F2904A22000DD3E36 /* XCRemoteSwiftPackageReference "MobileCoreUI" */ = {
+		DE5481092904E33A001A451F /* XCRemoteSwiftPackageReference "MobileCoreUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ppraveentr/MobileCoreUI";
 			requirement = {
@@ -695,9 +695,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DE1629502904A22000DD3E36 /* MobileCoreUI */ = {
+		DE54810A2904E33A001A451F /* MobileCoreUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DE16294F2904A22000DD3E36 /* XCRemoteSwiftPackageReference "MobileCoreUI" */;
+			package = DE5481092904E33A001A451F /* XCRemoteSwiftPackageReference "MobileCoreUI" */;
 			productName = MobileCoreUI;
 		};
 /* End XCSwiftPackageProductDependency section */
