@@ -1,19 +1,20 @@
 //
-//  HomeView.swift
+//  LibaryView.swift
 //  NovelReader
 //
-//  Created by Praveen Prabhakar on 26/10/22.
+//  Created by Praveen Prabhakar on 05/11/22.
 //
 
 import SwiftUI
 
-struct HomeView: View {
+struct LibaryView: View {
     @State
-    private var searchText: String = ""
+    var searchText: String = ""
 
     var body: some View {
         VStack {
-            Text("Hello, HomeView!")
+            Text("Hello, Libary!")
+                .style("Title")
         }
         .searchable(text: $searchText,
                     placement: .navigationBarDrawer(displayMode: .automatic),
@@ -21,8 +22,8 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+private struct LibaryView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        LibaryView()
     }
 }

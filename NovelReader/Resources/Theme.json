@@ -15,7 +15,7 @@
     },
     "styles": {
         "Title": {
-            "forgroundColor": {"light": "black"},
+            "forgroundColor": {"light": "blue"},
             "font": "headerTitle"
         },
         "SubTitle": {

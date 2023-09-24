@@ -13,7 +13,7 @@ struct ContentView: View {
 #if os(iOS)
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
 #endif
-    @State private var selection: Destinations = .search
+    @State private var selection: Destinations = .home
 
     var body: some View {
         ZStack {

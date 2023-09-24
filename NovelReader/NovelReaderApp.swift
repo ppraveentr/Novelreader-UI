@@ -16,7 +16,7 @@ struct NovelReaderApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
-                .onAppear() {
+                .onAppear {
                     Task {
                         await loadThemeModel()
                     }

@@ -8,16 +8,18 @@
 import SwiftUI
 
 enum Destinations: CaseIterable, Identifiable {
-    case search, profile
+    case home, libary, profile
 
     var id: String { title }
 
+    // For horizontalSizeClass == .compact
     static func tabBarView(_ selection: Binding<Destinations>) -> some View {
         TabView(selection: selection) {
             ForEach(Destinations.allCases, id: \.self) { $0.navigationView }
         }
     }
 
+    // For all others
     static func sideBarView(_ selection: Binding<Destinations>) -> some View {
         let _selection: Binding<Destinations?> = Binding(selection)
         return NavigationView {
@@ -31,28 +33,33 @@ enum Destinations: CaseIterable, Identifiable {
 private extension Destinations {
     var title: String {
         switch self {
-        case .search: return "Search"
+        case .home: return "Home"
         case .profile: return "Profile"
+        case .libary: return "Libary"
         }
     }
 
     var segmentLabel: some View {
         let title = self.title
         switch self {
-        case .search:
-            return Label(title, systemImage: "magnifyingglass")
+        case .home:
+            return Label(title, systemImage: "house.fill")
         case .profile:
             return Label(title, systemImage: "person")
+        case .libary:
+            return Label(title, systemImage: "books.vertical.fill")
         }
     }
 
     @ViewBuilder
     var contentView: some View {
         switch self {
-        case .search:
+        case .home:
             HomeView()
         case .profile:
             ProfileView()
+        case .libary:
+            LibaryView()
         }
     }
 
@@ -74,6 +81,5 @@ private extension Destinations {
         } label: {
             segmentLabel
         }
-        .tag(self)
     }
 }
