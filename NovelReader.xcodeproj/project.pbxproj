@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D497DDDA2AC2592200AC13C1 /* MobileTheme in Frameworks */ = {isa = PBXBuildFile; productRef = D497DDD92AC2592200AC13C1 /* MobileTheme */; };
+		DE16293B290492E600DD3E36 /* Theme.json in Resources */ = {isa = PBXBuildFile; fileRef = DE16293A290492E600DD3E36 /* Theme.json */; };
+		DE305F2129175AAA0006D6CA /* LibaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305F2029175AAA0006D6CA /* LibaryView.swift */; };
 		DE73DEE128DF99BB00EEDCFA /* NovelReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEE028DF99BB00EEDCFA /* NovelReaderApp.swift */; };
 		DE73DEE328DF99BB00EEDCFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEE228DF99BB00EEDCFA /* ContentView.swift */; };
 		DE73DEE528DF99BD00EEDCFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE73DEE428DF99BD00EEDCFA /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 		DE73DEF828DF99BE00EEDCFA /* NovelReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEF728DF99BE00EEDCFA /* NovelReaderTests.swift */; };
 		DE73DF0228DF99BE00EEDCFA /* NovelReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DF0128DF99BE00EEDCFA /* NovelReaderUITests.swift */; };
 		DE73DF0428DF99BE00EEDCFA /* NovelReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DF0328DF99BE00EEDCFA /* NovelReaderUITestsLaunchTests.swift */; };
+		DE7A45732909D934003AB2AD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A45722909D934003AB2AD /* HomeView.swift */; };
+		DE7A45752909D949003AB2AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A45742909D949003AB2AD /* ProfileView.swift */; };
+		DEB64125290F1DB200DC0A49 /* Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB64124290F1DB200DC0A49 /* Destinations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE16293A290492E600DD3E36 /* Theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Theme.json; sourceTree = "<group>"; };
+		DE305F2029175AAA0006D6CA /* LibaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibaryView.swift; sourceTree = "<group>"; };
 		DE73DEDD28DF99BB00EEDCFA /* NovelReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NovelReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE73DEE028DF99BB00EEDCFA /* NovelReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelReaderApp.swift; sourceTree = "<group>"; };
 		DE73DEE228DF99BB00EEDCFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +63,9 @@
 		DE73DF1828DFB22100EEDCFA /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
 		DE73DF1928DFBA1100EEDCFA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		DE73DF1A28DFBA1100EEDCFA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DE7A45722909D934003AB2AD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DE7A45742909D949003AB2AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DEB64124290F1DB200DC0A49 /* Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destinations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D497DDDA2AC2592200AC13C1 /* MobileTheme in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +94,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE1629362904929100DD3E36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE162939290492E600DD3E36 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE73DEEB28DF99BD00EEDCFA /* NovelReader.xcdatamodeld */,
+				DE73DEE428DF99BD00EEDCFA /* Assets.xcassets */,
+				DE16293A290492E600DD3E36 /* Theme.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE16293C2904933E00DD3E36 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DE73DEE928DF99BD00EEDCFA /* PersistenceController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		DE54810C29052827001A451F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A45722909D934003AB2AD /* HomeView.swift */,
+				DE7A45742909D949003AB2AD /* ProfileView.swift */,
+				DE305F2029175AAA0006D6CA /* LibaryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DE73DED428DF99BB00EEDCFA = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +138,7 @@
 				DE73DEF628DF99BE00EEDCFA /* NovelReaderTests */,
 				DE73DF0028DF99BE00EEDCFA /* NovelReaderUITests */,
 				DE73DEDE28DF99BB00EEDCFA /* Products */,
+				DE1629362904929100DD3E36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,12 +155,13 @@
 		DE73DEDF28DF99BB00EEDCFA /* NovelReader */ = {
 			isa = PBXGroup;
 			children = (
+				DE8B846E290F3D3E00C03C76 /* Common */,
 				DE73DEE028DF99BB00EEDCFA /* NovelReaderApp.swift */,
 				DE73DEE228DF99BB00EEDCFA /* ContentView.swift */,
-				DE73DEE428DF99BD00EEDCFA /* Assets.xcassets */,
-				DE73DEE928DF99BD00EEDCFA /* PersistenceController.swift */,
+				DE54810C29052827001A451F /* Views */,
+				DE16293C2904933E00DD3E36 /* CoreData */,
 				DE73DEEE28DF99BD00EEDCFA /* Info.plist */,
-				DE73DEEB28DF99BD00EEDCFA /* NovelReader.xcdatamodeld */,
+				DE162939290492E600DD3E36 /* Resources */,
 				DE73DEE628DF99BD00EEDCFA /* Preview Content */,
 			);
 			path = NovelReader;
@@ -155,6 +204,14 @@
 			name = Git;
 			sourceTree = "<group>";
 		};
+		DE8B846E290F3D3E00C03C76 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DEB64124290F1DB200DC0A49 /* Destinations.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,13 +222,16 @@
 				DE73DED928DF99BB00EEDCFA /* Sources */,
 				DE73DEDA28DF99BB00EEDCFA /* Frameworks */,
 				DE73DEDB28DF99BB00EEDCFA /* Resources */,
-				DE73DF1128DF9A1700EEDCFA /* SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D497DDCE2AC251E200AC13C1 /* PBXTargetDependency */,
 			);
 			name = NovelReader;
+			packageProductDependencies = (
+				D497DDD92AC2592200AC13C1 /* MobileTheme */,
+			);
 			productName = NovelReader;
 			productReference = DE73DEDD28DF99BB00EEDCFA /* NovelReader.app */;
 			productType = "com.apple.product-type.application";
@@ -220,7 +280,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					DE73DEDC28DF99BB00EEDCFA = {
 						CreatedOnToolsVersion = 14.0;
@@ -244,6 +304,11 @@
 				Base,
 			);
 			mainGroup = DE73DED428DF99BB00EEDCFA;
+			packageReferences = (
+				DE5481092904E33A001A451F /* XCRemoteSwiftPackageReference "MobileCoreUI" */,
+				D497DDCC2AC2516400AC13C1 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				D497DDD82AC2592200AC13C1 /* XCRemoteSwiftPackageReference "MobileTheme" */,
+			);
 			productRefGroup = DE73DEDE28DF99BB00EEDCFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE16293B290492E600DD3E36 /* Theme.json in Resources */,
 				DE73DEE828DF99BD00EEDCFA /* Preview Assets.xcassets in Resources */,
 				DE73DEE528DF99BD00EEDCFA /* Assets.xcassets in Resources */,
 			);
@@ -281,35 +347,18 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		DE73DF1128DF9A1700EEDCFA /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		DE73DED928DF99BB00EEDCFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DE73DEEA28DF99BD00EEDCFA /* PersistenceController.swift in Sources */,
+				DE305F2129175AAA0006D6CA /* LibaryView.swift in Sources */,
 				DE73DEE328DF99BB00EEDCFA /* ContentView.swift in Sources */,
+				DEB64125290F1DB200DC0A49 /* Destinations.swift in Sources */,
+				DE7A45732909D934003AB2AD /* HomeView.swift in Sources */,
 				DE73DEE128DF99BB00EEDCFA /* NovelReaderApp.swift in Sources */,
+				DE7A45752909D949003AB2AD /* ProfileView.swift in Sources */,
 				DE73DEED28DF99BD00EEDCFA /* NovelReader.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +383,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D497DDCE2AC251E200AC13C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = D497DDCD2AC251E200AC13C1 /* SwiftLintPlugin */;
+		};
 		DE73DEF528DF99BE00EEDCFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DE73DEDC28DF99BB00EEDCFA /* NovelReader */;
@@ -351,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -383,6 +437,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -397,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -411,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -443,6 +499,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -451,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -466,28 +523,40 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_TIDY_BUGPRONE_REDUNDANT_BRANCH_CONDITION = YES;
+				CLANG_TIDY_MISC_REDUNDANT_EXPRESSION = YES;
+				CLANG_WARN_FRAMEWORK_INCLUDE_PRIVATE_FROM_PUBLIC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NovelReader/Preview Content\"";
 				DEVELOPMENT_TEAM = W6W48SVQX7;
 				ENABLE_PREVIEWS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NovelReader/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ft.NovelReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -496,28 +565,40 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_TIDY_BUGPRONE_REDUNDANT_BRANCH_CONDITION = YES;
+				CLANG_TIDY_MISC_REDUNDANT_EXPRESSION = YES;
+				CLANG_WARN_FRAMEWORK_INCLUDE_PRIVATE_FROM_PUBLIC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NovelReader/Preview Content\"";
 				DEVELOPMENT_TEAM = W6W48SVQX7;
 				ENABLE_PREVIEWS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NovelReader/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ft.NovelReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -530,7 +611,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W6W48SVQX7;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ft.NovelReaderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,7 +631,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W6W48SVQX7;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ft.NovelReaderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -637,6 +718,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D497DDCC2AC2516400AC13C1 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.52.4;
+			};
+		};
+		D497DDD82AC2592200AC13C1 /* XCRemoteSwiftPackageReference "MobileTheme" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:ppraveentr/MobileTheme.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D497DDCD2AC251E200AC13C1 /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D497DDCC2AC2516400AC13C1 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
+		};
+		D497DDD92AC2592200AC13C1 /* MobileTheme */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D497DDD82AC2592200AC13C1 /* XCRemoteSwiftPackageReference "MobileTheme" */;
+			productName = MobileTheme;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DE73DEEB28DF99BD00EEDCFA /* NovelReader.xcdatamodeld */ = {
