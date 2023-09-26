@@ -10,7 +10,6 @@ large_tuple: 4
 function_body_length : 50
 function_parameter_count: 9
 warning_threshold: 1
-closure_body_length: 16
 file_length: 750
 
 cyclomatic_complexity:
@@ -27,15 +26,9 @@ nesting:
 conditional_returns_on_newline:
   if_only: true
 
-identifier_name:
-  max_length: 30
-  min_length: 3
-
 file_name:
   prefix_pattern: ""
   suffix_pattern: "(Extension|Theme)?|\\+.*"
-
-warning_threshold: 1
 
 custom_rules:
   no_break_with_label:
