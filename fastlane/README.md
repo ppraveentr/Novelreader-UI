@@ -23,13 +23,37 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 SwiftLane
 
-### ios build_test
+### ios build_lane
 
 ```sh
-[bundle exec] fastlane ios build_test
+[bundle exec] fastlane ios build_lane
 ```
 
 Build
+
+### ios only_unit_test
+
+```sh
+[bundle exec] fastlane ios only_unit_test
+```
+
+Only Testing
+
+### ios only_ui_test
+
+```sh
+[bundle exec] fastlane ios only_ui_test
+```
+
+
+
+### ios build_tests
+
+```sh
+[bundle exec] fastlane ios build_tests
+```
+
+Build and run Unit & UI Tests
 
 ### ios reports
 

@@ -10,26 +10,55 @@
 #     https://docs.fastlane.tools/plugins/available-plugins
 #
 
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
 default_platform(:ios)
 
 platform :ios do
   desc "SwiftLane"
-  lane :swift_lint do
+  lane :lint do
     swiftlint(
         mode: :lint,
         config_file: ".swiftlint.yml",
+        raise_if_swiftlint_error: true,
         output_file: "fastlane/swiftlint.result.json"
     )
   end
   
   desc "Build"
+  lane :build_lane do
+    scan(
+        derived_data_path: "derivedData",
+        build_for_testing: true,
+        xcargs: "CI=true")
+  end
+  
+  desc "Only Testing"
+  lane :only_unit_test do
+    scan(
+        derived_data_path: "derivedData",
+        only_testing: ["NovelReaderTests"],
+        test_without_building: true)
+  end
+  
+  lane :only_ui_test do
+    scan(
+        derived_data_path: "derivedData",
+        only_testing: ["NovelReaderUITests"],
+        test_without_building: true)
+  end
+  
+  desc "Build and run Unit & UI Tests"
   lane :build_tests do
-    scan()
+    build_lane
+    only_unit_test
+    only_ui_test
   end
   
   desc "Reports"
   lane :reports do
-    swift_lint
+    lint
     build_tests
   end
 end
