@@ -222,11 +222,11 @@
 				DE73DED928DF99BB00EEDCFA /* Sources */,
 				DE73DEDA28DF99BB00EEDCFA /* Frameworks */,
 				DE73DEDB28DF99BB00EEDCFA /* Resources */,
+				D40A2F0B2AC31ED100EBF66E /* SwiftLint Run Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D4D12B9D2AC31A710030C1F1 /* PBXTargetDependency */,
 			);
 			name = NovelReader;
 			packageProductDependencies = (
@@ -305,7 +305,6 @@
 			);
 			mainGroup = DE73DED428DF99BB00EEDCFA;
 			packageReferences = (
-				D497DDCC2AC2516400AC13C1 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				D4D121592AC319A60030B5D1 /* XCRemoteSwiftPackageReference "MobileTheme" */,
 			);
 			productRefGroup = DE73DEDE28DF99BB00EEDCFA /* Products */;
@@ -346,6 +345,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D40A2F0B2AC31ED100EBF66E /* SwiftLint Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE73DED928DF99BB00EEDCFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -382,10 +402,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D4D12B9D2AC31A710030C1F1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = D4D12B9C2AC31A710030C1F1 /* SwiftLintPlugin */;
-		};
 		DE73DEF528DF99BE00EEDCFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DE73DEDC28DF99BB00EEDCFA /* NovelReader */;
@@ -533,6 +549,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NovelReader/Preview Content\"";
 				DEVELOPMENT_TEAM = W6W48SVQX7;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -575,6 +592,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NovelReader/Preview Content\"";
 				DEVELOPMENT_TEAM = W6W48SVQX7;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -719,14 +737,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D497DDCC2AC2516400AC13C1 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/SwiftLint.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.52.4;
-			};
-		};
 		D4D121592AC319A60030B5D1 /* XCRemoteSwiftPackageReference "MobileTheme" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:ppraveentr/MobileTheme.git";
@@ -742,11 +752,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D4D121592AC319A60030B5D1 /* XCRemoteSwiftPackageReference "MobileTheme" */;
 			productName = MobileTheme;
-		};
-		D4D12B9C2AC31A710030C1F1 /* SwiftLintPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D497DDCC2AC2516400AC13C1 /* XCRemoteSwiftPackageReference "SwiftLint" */;
-			productName = "plugin:SwiftLintPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
 
