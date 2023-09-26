@@ -3,8 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>UIBackgroundModes</key>
-	<array>
-		<string>remote-notification</string>
-	</array>
+	<array/>
+	<key>UILaunchScreens</key>
+	<dict>
+		<key>Background color</key>
+		<string>white</string>
+	</dict>
 </dict>
 </plist>

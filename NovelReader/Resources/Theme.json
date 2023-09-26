@@ -1,0 +1,29 @@
+{
+    "version": "1.0",
+    "colors": {
+        "black": "#242424",
+        "grey": "#757575",
+        "white": "#FFFFFF",
+        "blue": "#5467FF",
+        "background": "#F4F5F9",
+        "darkbg": "#C2C6DB",
+        "red": "#EE4B2B"
+    },
+    "fonts": {
+        "headerTitle": { "styleName": "headline" },
+        "subTitle": { "styleName": "subheadline" }
+    },
+    "styles": {
+        "Title": {
+            "forgroundColor": {"light": "blue"},
+            "font": "headerTitle"
+        },
+        "SubTitle": {
+            "forgroundColor": {"light": "grey"},
+            "font": "subTitle"
+        },
+        "ViewBackground": {
+            "forgroundColor": {"light": "background"}
+        }
+    }
+}

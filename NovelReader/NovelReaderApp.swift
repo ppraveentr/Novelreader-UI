@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Theme
 
 @main
 struct NovelReaderApp: App {
@@ -15,6 +16,16 @@ struct NovelReaderApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .onAppear {
+                    Task {
+                        await loadThemeModel()
+                    }
+                }
         }
     }
+}
+
+private func loadThemeModel() async {
+    guard let lightTheme = try? Data.contentOfFile("Theme.json") else { return }
+    try? ThemesManager.loadThemeModel(lightTheme)
 }
