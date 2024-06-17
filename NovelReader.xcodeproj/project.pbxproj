@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4D12B9B2AC31A5E0030C1F1 /* MobileTheme in Frameworks */ = {isa = PBXBuildFile; productRef = D4D12B9A2AC31A5E0030C1F1 /* MobileTheme */; };
+		D49FF4742B950A7700C7EFE2 /* ChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49FF4732B950A7700C7EFE2 /* ChapterView.swift */; };
+		D4CC76612AC5974C001FAE7D /* MobileTheme in Frameworks */ = {isa = PBXBuildFile; productRef = D4CC76602AC5974C001FAE7D /* MobileTheme */; };
 		DE16293B290492E600DD3E36 /* Theme.json in Resources */ = {isa = PBXBuildFile; fileRef = DE16293A290492E600DD3E36 /* Theme.json */; };
 		DE305F2129175AAA0006D6CA /* LibaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305F2029175AAA0006D6CA /* LibaryView.swift */; };
 		DE73DEE128DF99BB00EEDCFA /* NovelReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEE028DF99BB00EEDCFA /* NovelReaderApp.swift */; };
@@ -19,7 +20,7 @@
 		DE73DEF828DF99BE00EEDCFA /* NovelReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEF728DF99BE00EEDCFA /* NovelReaderTests.swift */; };
 		DE73DF0228DF99BE00EEDCFA /* NovelReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DF0128DF99BE00EEDCFA /* NovelReaderUITests.swift */; };
 		DE73DF0428DF99BE00EEDCFA /* NovelReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DF0328DF99BE00EEDCFA /* NovelReaderUITestsLaunchTests.swift */; };
-		DE7A45732909D934003AB2AD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A45722909D934003AB2AD /* HomeView.swift */; };
+		DE7A45732909D934003AB2AD /* NovelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A45722909D934003AB2AD /* NovelView.swift */; };
 		DE7A45752909D949003AB2AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A45742909D949003AB2AD /* ProfileView.swift */; };
 		DEB64125290F1DB200DC0A49 /* Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB64124290F1DB200DC0A49 /* Destinations.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D49FF4732B950A7700C7EFE2 /* ChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterView.swift; sourceTree = "<group>"; };
 		DE16293A290492E600DD3E36 /* Theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Theme.json; sourceTree = "<group>"; };
 		DE305F2029175AAA0006D6CA /* LibaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibaryView.swift; sourceTree = "<group>"; };
 		DE73DEDD28DF99BB00EEDCFA /* NovelReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NovelReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +65,7 @@
 		DE73DF1828DFB22100EEDCFA /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
 		DE73DF1928DFBA1100EEDCFA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		DE73DF1A28DFBA1100EEDCFA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		DE7A45722909D934003AB2AD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DE7A45722909D934003AB2AD /* NovelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelView.swift; sourceTree = "<group>"; };
 		DE7A45742909D949003AB2AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DEB64124290F1DB200DC0A49 /* Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destinations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4D12B9B2AC31A5E0030C1F1 /* MobileTheme in Frameworks */,
+				D4CC76612AC5974C001FAE7D /* MobileTheme in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +124,8 @@
 		DE54810C29052827001A451F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DE7A45722909D934003AB2AD /* HomeView.swift */,
+				DE7A45722909D934003AB2AD /* NovelView.swift */,
+				D49FF4732B950A7700C7EFE2 /* ChapterView.swift */,
 				DE7A45742909D949003AB2AD /* ProfileView.swift */,
 				DE305F2029175AAA0006D6CA /* LibaryView.swift */,
 			);
@@ -230,7 +233,7 @@
 			);
 			name = NovelReader;
 			packageProductDependencies = (
-				D4D12B9A2AC31A5E0030C1F1 /* MobileTheme */,
+				D4CC76602AC5974C001FAE7D /* MobileTheme */,
 			);
 			productName = NovelReader;
 			productReference = DE73DEDD28DF99BB00EEDCFA /* NovelReader.app */;
@@ -305,7 +308,7 @@
 			);
 			mainGroup = DE73DED428DF99BB00EEDCFA;
 			packageReferences = (
-				D4D121592AC319A60030B5D1 /* XCRemoteSwiftPackageReference "MobileTheme" */,
+				D4CC765F2AC5974C001FAE7D /* XCLocalSwiftPackageReference "../MobileTheme" */,
 			);
 			productRefGroup = DE73DEDE28DF99BB00EEDCFA /* Products */;
 			projectDirPath = "";
@@ -348,6 +351,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		D40A2F0B2AC31ED100EBF66E /* SwiftLint Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -373,9 +377,10 @@
 			files = (
 				DE73DEEA28DF99BD00EEDCFA /* PersistenceController.swift in Sources */,
 				DE305F2129175AAA0006D6CA /* LibaryView.swift in Sources */,
+				D49FF4742B950A7700C7EFE2 /* ChapterView.swift in Sources */,
 				DE73DEE328DF99BB00EEDCFA /* ContentView.swift in Sources */,
 				DEB64125290F1DB200DC0A49 /* Destinations.swift in Sources */,
-				DE7A45732909D934003AB2AD /* HomeView.swift in Sources */,
+				DE7A45732909D934003AB2AD /* NovelView.swift in Sources */,
 				DE73DEE128DF99BB00EEDCFA /* NovelReaderApp.swift in Sources */,
 				DE7A45752909D949003AB2AD /* ProfileView.swift in Sources */,
 				DE73DEED28DF99BD00EEDCFA /* NovelReader.xcdatamodeld in Sources */,
@@ -560,6 +565,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -603,6 +609,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -736,21 +743,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		D4D121592AC319A60030B5D1 /* XCRemoteSwiftPackageReference "MobileTheme" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:ppraveentr/MobileTheme.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.3;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		D4CC765F2AC5974C001FAE7D /* XCLocalSwiftPackageReference "../MobileTheme" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../MobileTheme;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D4D12B9A2AC31A5E0030C1F1 /* MobileTheme */ = {
+		D4CC76602AC5974C001FAE7D /* MobileTheme */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D4D121592AC319A60030B5D1 /* XCRemoteSwiftPackageReference "MobileTheme" */;
 			productName = MobileTheme;
 		};
 /* End XCSwiftPackageProductDependency section */
