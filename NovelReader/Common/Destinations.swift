@@ -3,14 +3,15 @@
 //  NovelReader
 //
 //  Created by Praveen Prabhakar on 30/10/22.
+//  Copyright (c) 2022 Praveen P. All rights reserved.
 //
 
 import SwiftUI
 
-enum Destinations: CaseIterable, Identifiable {
-    case home, libary, profile
+enum Destinations: String, CaseIterable, Identifiable {
+    case home = "Novel", libary = "Libary", profile = "Profile"
 
-    var id: String { title }
+    var id: String { self.rawValue }
 
     // For horizontalSizeClass == .compact
     static func tabBarView(_ selection: Binding<Destinations>) -> some View {
@@ -31,23 +32,14 @@ enum Destinations: CaseIterable, Identifiable {
 }
 
 private extension Destinations {
-    var title: String {
-        switch self {
-        case .home: return "Home"
-        case .profile: return "Profile"
-        case .libary: return "Libary"
-        }
-    }
-
-    var segmentLabel: some View {
-        let title = self.title
+    var tabBarLabel: some View {
         switch self {
         case .home:
-            return Label(title, systemImage: "house.fill")
+            Label(id, systemImage: "house.fill")
         case .profile:
-            return Label(title, systemImage: "person")
+            Label(id, systemImage: "person")
         case .libary:
-            return Label(title, systemImage: "books.vertical.fill")
+            Label(id, systemImage: "books.vertical.fill")
         }
     }
 
@@ -55,7 +47,7 @@ private extension Destinations {
     var contentView: some View {
         switch self {
         case .home:
-            HomeView()
+            NovelView()
         case .profile:
             ProfileView()
         case .libary:
@@ -67,10 +59,7 @@ private extension Destinations {
     var navigationView: some View {
         NavigationView {
             contentView
-        }
-        .tabItem {
-            segmentLabel
-        }
+        }.tabItem { tabBarLabel }
         .tag(self)
     }
 
@@ -79,7 +68,7 @@ private extension Destinations {
         NavigationLink(tag: self, selection: selection) {
             contentView
         } label: {
-            segmentLabel
+            tabBarLabel
         }
     }
 }

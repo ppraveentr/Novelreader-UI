@@ -3,6 +3,7 @@
 //  NovelReader
 //
 //  Created by Praveen Prabhakar on 24/09/22.
+//  Copyright (c) 2022 Praveen P. All rights reserved.
 //
 
 import SwiftUI
@@ -30,9 +31,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-    }
+// MARK: Preview
+
+#Preview {
+    ContentView()
+        .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

@@ -3,6 +3,7 @@
 //  NovelReader
 //
 //  Created by Praveen Prabhakar on 24/09/22.
+//  Copyright (c) 2022 Praveen P. All rights reserved.
 //
 
 import SwiftUI
@@ -27,5 +28,5 @@ struct NovelReaderApp: App {
 
 private func loadThemeModel() async {
     guard let lightTheme = try? Data.contentOfFile("Theme.json") else { return }
-    try? ThemesManager.loadThemeModel(lightTheme)
+    try? ThemesManager.setupApplicationTheme(lightTheme)
 }

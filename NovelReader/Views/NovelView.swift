@@ -1,13 +1,14 @@
 //
-//  HomeView.swift
+//  NovelView.swift
 //  NovelReader
 //
 //  Created by Praveen Prabhakar on 26/10/22.
+//  Copyright (c) 2022 Praveen P. All rights reserved.
 //
 
 import SwiftUI
 
-struct HomeView: View {
+struct NovelView: View {
     @State
     private var searchText: String = ""
 
@@ -21,8 +22,8 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
+// MARK: Preview
+
+#Preview {
+    NovelView()
 }
