@@ -3,6 +3,7 @@
 //  NovelReader
 //
 //  Created by Praveen Prabhakar on 05/11/22.
+//  Copyright (c) 2022 Praveen P. All rights reserved.
 //
 
 import SwiftUI
@@ -22,8 +23,8 @@ struct LibaryView: View {
     }
 }
 
-private struct LibaryView_Previews: PreviewProvider {
-    static var previews: some View {
-        LibaryView()
-    }
+// MARK: Preview
+
+#Preview {
+    LibaryView()
 }
