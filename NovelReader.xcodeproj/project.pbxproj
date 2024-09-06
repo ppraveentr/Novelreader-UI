@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4052F082C8A7E1900684111 /* MobileContentManager in Frameworks */ = {isa = PBXBuildFile; productRef = D4052F072C8A7E1900684111 /* MobileContentManager */; };
+		D4052F0A2C8A7E3300684111 /* MobileContentManager in Frameworks */ = {isa = PBXBuildFile; productRef = D4052F092C8A7E3300684111 /* MobileContentManager */; };
 		D49FF4742B950A7700C7EFE2 /* ChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49FF4732B950A7700C7EFE2 /* ChapterView.swift */; };
+		D4CBCC742C8682AC007DB031 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CBCC732C8682AC007DB031 /* Utility.swift */; };
+		D4CBCC762C86832C007DB031 /* NovelReader.db in Resources */ = {isa = PBXBuildFile; fileRef = D4CBCC752C86832C007DB031 /* NovelReader.db */; };
+		D4CBCC792C868983007DB031 /* MobileContentManager in Frameworks */ = {isa = PBXBuildFile; productRef = D4CBCC782C868983007DB031 /* MobileContentManager */; };
 		D4CC76612AC5974C001FAE7D /* MobileTheme in Frameworks */ = {isa = PBXBuildFile; productRef = D4CC76602AC5974C001FAE7D /* MobileTheme */; };
 		DE16293B290492E600DD3E36 /* Theme.json in Resources */ = {isa = PBXBuildFile; fileRef = DE16293A290492E600DD3E36 /* Theme.json */; };
 		DE305F2129175AAA0006D6CA /* LibaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305F2029175AAA0006D6CA /* LibaryView.swift */; };
@@ -15,8 +20,7 @@
 		DE73DEE328DF99BB00EEDCFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEE228DF99BB00EEDCFA /* ContentView.swift */; };
 		DE73DEE528DF99BD00EEDCFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE73DEE428DF99BD00EEDCFA /* Assets.xcassets */; };
 		DE73DEE828DF99BD00EEDCFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE73DEE728DF99BD00EEDCFA /* Preview Assets.xcassets */; };
-		DE73DEEA28DF99BD00EEDCFA /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEE928DF99BD00EEDCFA /* PersistenceController.swift */; };
-		DE73DEED28DF99BD00EEDCFA /* NovelReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEEB28DF99BD00EEDCFA /* NovelReader.xcdatamodeld */; };
+		DE73DEEA28DF99BD00EEDCFA /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEE928DF99BD00EEDCFA /* PersistenceManager.swift */; };
 		DE73DEF828DF99BE00EEDCFA /* NovelReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEF728DF99BE00EEDCFA /* NovelReaderTests.swift */; };
 		DE73DF0228DF99BE00EEDCFA /* NovelReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DF0128DF99BE00EEDCFA /* NovelReaderUITests.swift */; };
 		DE73DF0428DF99BE00EEDCFA /* NovelReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DF0328DF99BE00EEDCFA /* NovelReaderUITestsLaunchTests.swift */; };
@@ -44,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		D49FF4732B950A7700C7EFE2 /* ChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterView.swift; sourceTree = "<group>"; };
+		D4CBCC732C8682AC007DB031 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		D4CBCC752C86832C007DB031 /* NovelReader.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = NovelReader.db; path = NovelReader/CoreData/NovelReader.db; sourceTree = SOURCE_ROOT; };
 		DE16293A290492E600DD3E36 /* Theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Theme.json; sourceTree = "<group>"; };
 		DE305F2029175AAA0006D6CA /* LibaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibaryView.swift; sourceTree = "<group>"; };
 		DE73DEDD28DF99BB00EEDCFA /* NovelReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NovelReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,8 +57,7 @@
 		DE73DEE228DF99BB00EEDCFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE73DEE428DF99BD00EEDCFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE73DEE728DF99BD00EEDCFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DE73DEE928DF99BD00EEDCFA /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		DE73DEEC28DF99BD00EEDCFA /* NovelReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NovelReader.xcdatamodel; sourceTree = "<group>"; };
+		DE73DEE928DF99BD00EEDCFA /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		DE73DEEE28DF99BD00EEDCFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE73DEF328DF99BE00EEDCFA /* NovelReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovelReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE73DEF728DF99BE00EEDCFA /* NovelReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelReaderTests.swift; sourceTree = "<group>"; };
@@ -75,7 +80,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CBCC792C868983007DB031 /* MobileContentManager in Frameworks */,
 				D4CC76612AC5974C001FAE7D /* MobileTheme in Frameworks */,
+				D4052F0A2C8A7E3300684111 /* MobileContentManager in Frameworks */,
+				D4052F082C8A7E1900684111 /* MobileContentManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +114,7 @@
 		DE162939290492E600DD3E36 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DE73DEEB28DF99BD00EEDCFA /* NovelReader.xcdatamodeld */,
+				D4CBCC752C86832C007DB031 /* NovelReader.db */,
 				DE73DEE428DF99BD00EEDCFA /* Assets.xcassets */,
 				DE16293A290492E600DD3E36 /* Theme.json */,
 			);
@@ -116,7 +124,7 @@
 		DE16293C2904933E00DD3E36 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				DE73DEE928DF99BD00EEDCFA /* PersistenceController.swift */,
+				DE73DEE928DF99BD00EEDCFA /* PersistenceManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -211,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				DEB64124290F1DB200DC0A49 /* Destinations.swift */,
+				D4CBCC732C8682AC007DB031 /* Utility.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -234,6 +243,9 @@
 			name = NovelReader;
 			packageProductDependencies = (
 				D4CC76602AC5974C001FAE7D /* MobileTheme */,
+				D4CBCC782C868983007DB031 /* MobileContentManager */,
+				D4052F072C8A7E1900684111 /* MobileContentManager */,
+				D4052F092C8A7E3300684111 /* MobileContentManager */,
 			);
 			productName = NovelReader;
 			productReference = DE73DEDD28DF99BB00EEDCFA /* NovelReader.app */;
@@ -283,7 +295,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					DE73DEDC28DF99BB00EEDCFA = {
 						CreatedOnToolsVersion = 14.0;
@@ -309,6 +321,7 @@
 			mainGroup = DE73DED428DF99BB00EEDCFA;
 			packageReferences = (
 				D4CC765F2AC5974C001FAE7D /* XCLocalSwiftPackageReference "../MobileTheme" */,
+				D4052F062C8A7E1900684111 /* XCLocalSwiftPackageReference "NovelReader/CoreData/MobileContentManager" */,
 			);
 			productRefGroup = DE73DEDE28DF99BB00EEDCFA /* Products */;
 			projectDirPath = "";
@@ -327,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE16293B290492E600DD3E36 /* Theme.json in Resources */,
+				D4CBCC762C86832C007DB031 /* NovelReader.db in Resources */,
 				DE73DEE828DF99BD00EEDCFA /* Preview Assets.xcassets in Resources */,
 				DE73DEE528DF99BD00EEDCFA /* Assets.xcassets in Resources */,
 			);
@@ -375,7 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE73DEEA28DF99BD00EEDCFA /* PersistenceController.swift in Sources */,
+				DE73DEEA28DF99BD00EEDCFA /* PersistenceManager.swift in Sources */,
 				DE305F2129175AAA0006D6CA /* LibaryView.swift in Sources */,
 				D49FF4742B950A7700C7EFE2 /* ChapterView.swift in Sources */,
 				DE73DEE328DF99BB00EEDCFA /* ContentView.swift in Sources */,
@@ -383,7 +397,7 @@
 				DE7A45732909D934003AB2AD /* NovelView.swift in Sources */,
 				DE73DEE128DF99BB00EEDCFA /* NovelReaderApp.swift in Sources */,
 				DE7A45752909D949003AB2AD /* ProfileView.swift in Sources */,
-				DE73DEED28DF99BD00EEDCFA /* NovelReader.xcdatamodeld in Sources */,
+				D4CBCC742C8682AC007DB031 /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -528,7 +542,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -565,7 +579,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -609,7 +623,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -629,7 +643,6 @@
 		DE73DF0B28DF99BE00EEDCFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -649,7 +662,6 @@
 		DE73DF0C28DF99BE00EEDCFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -669,7 +681,6 @@
 		DE73DF0E28DF99BE00EEDCFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W6W48SVQX7;
@@ -687,7 +698,6 @@
 		DE73DF0F28DF99BE00EEDCFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W6W48SVQX7;
@@ -744,6 +754,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
+		D4052F062C8A7E1900684111 /* XCLocalSwiftPackageReference "NovelReader/CoreData/MobileContentManager" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = NovelReader/CoreData/MobileContentManager;
+		};
 		D4CC765F2AC5974C001FAE7D /* XCLocalSwiftPackageReference "../MobileTheme" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../MobileTheme;
@@ -751,24 +765,23 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D4052F072C8A7E1900684111 /* MobileContentManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MobileContentManager;
+		};
+		D4052F092C8A7E3300684111 /* MobileContentManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MobileContentManager;
+		};
+		D4CBCC782C868983007DB031 /* MobileContentManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MobileContentManager;
+		};
 		D4CC76602AC5974C001FAE7D /* MobileTheme */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MobileTheme;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		DE73DEEB28DF99BD00EEDCFA /* NovelReader.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DE73DEEC28DF99BD00EEDCFA /* NovelReader.xcdatamodel */,
-			);
-			currentVersion = DE73DEEC28DF99BD00EEDCFA /* NovelReader.xcdatamodel */;
-			path = NovelReader.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = DE73DED528DF99BB00EEDCFA /* Project object */;
 }

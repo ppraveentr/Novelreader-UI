@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import CoreData
 import Theme
 
 struct ContentView: View {
@@ -29,11 +28,4 @@ struct ContentView: View {
 #endif
         }
     }
-}
-
-// MARK: Preview
-
-#Preview {
-    ContentView()
-        .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

@@ -65,9 +65,7 @@ private extension Destinations {
 
     @ViewBuilder
     func navigationLink(_ selection: Binding<Destinations?>) -> some View {
-        NavigationLink(tag: self, selection: selection) {
-            contentView
-        } label: {
+        NavigationLink(destination: contentView) {
             tabBarLabel
         }
     }

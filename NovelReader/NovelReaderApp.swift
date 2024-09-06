@@ -6,22 +6,25 @@
 //  Copyright (c) 2022 Praveen P. All rights reserved.
 //
 
+import SwiftData
 import SwiftUI
 import Theme
 
 @main
 struct NovelReaderApp: App {
-    let persistenceController = PersistenceController.shared
+    let dbManger = PersistenceManager()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .onAppear {
                     Task {
                         await loadThemeModel()
                     }
                 }
+                .dbManagerKey(dbManger)
+//                .modelContext(persistenceController)
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
