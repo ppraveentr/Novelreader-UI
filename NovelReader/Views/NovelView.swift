@@ -11,6 +11,15 @@ import SwiftData
 import SwiftUI
 
 struct NovelView: View {
+    enum DataConstants: String {
+        case titleText = "NovelView.Title"
+        case searchPrompt = "NovelView.SearchPrompt"
+
+        var content: String {
+            self.rawValue.localized
+        }
+    }
+
     @Environment(\.modelContext) var modelContext
     @Query var destinations: [VisualContent]
 
@@ -19,7 +28,7 @@ struct NovelView: View {
 
     var body: some View {
         VStack {
-            Text("Hello, NovelView!")
+            Text(DataConstants.titleText.content)
             ForEach(destinations) { destination in
                 VStack(alignment: .leading) {
                     Text(destination.name)
@@ -34,7 +43,7 @@ struct NovelView: View {
         }
         .searchable(text: $searchText,
                     placement: .navigationBarDrawer(displayMode: .automatic),
-                    prompt: "Title, Author")
+                    prompt: DataConstants.searchPrompt.content)
     }
 
     func addSamples() {

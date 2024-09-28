@@ -1,0 +1,46 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Add Samples" : {
+
+    },
+    "Hello, Libary!" : {
+
+    },
+    "Hello, ProfileView!" : {
+
+    },
+    "Hello, World!" : {
+
+    },
+    "NovelView.SearchPrompt" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search Novel"
+          }
+        }
+      }
+    },
+    "NovelView.Title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home! Novel"
+          }
+        }
+      }
+    },
+    "Profile" : {
+
+    },
+    "Title, Author" : {
+
+    }
+  },
+  "version" : "1.0"
+}

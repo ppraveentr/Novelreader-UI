@@ -12,24 +12,23 @@ import Theme
 
 @main
 struct NovelReaderApp: App {
-    let dbManger = PersistenceManager()
+    static let themeJson = "Theme.json"
+    @State var dbManger = ContentStore.contentManager
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .onAppear {
                     Task {
-                        await loadThemeModel()
+                        await loadThemeModel(theme: Self.themeJson)
                     }
                 }
-                .dbManagerKey(dbManger)
-//                .modelContext(persistenceController)
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .persistenceManager(dbManger)
         }
     }
 }
 
-private func loadThemeModel() async {
-    guard let lightTheme = try? Data.contentOfFile("Theme.json") else { return }
+private func loadThemeModel(theme: String) async {
+    guard let lightTheme = try? Data.contentOfFile(theme) else { return }
     try? ThemesManager.setupApplicationTheme(lightTheme)
 }

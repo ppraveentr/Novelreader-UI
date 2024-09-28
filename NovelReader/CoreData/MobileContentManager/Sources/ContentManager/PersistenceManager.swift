@@ -11,17 +11,18 @@ import SwiftData
 import SwiftUI
 
 @Observable
-class PersistenceManager {
-    static let dbName = "NovelReader.db"
-    var contentManager: SwiftModelContainer?
+public class PersistenceManager {
+    let dbName: String
+    public var contentManager: SwiftModelContainer?
 
-    init() {
-        self.contentManager = try? SwiftModelContainer(dbName: Self.dbName)
+    public init(dbName: String) {
+        self.dbName = dbName
+        self.contentManager = try? SwiftModelContainer(dbName: dbName)
     }
 }
 
-extension View {
-    func dbManagerKey(_ manager: PersistenceManager) -> some View {
+public extension View {
+    func persistenceManager(_ manager: PersistenceManager) -> some View {
         modifier(DBManagerModifier(manager: manager))
     }
 }

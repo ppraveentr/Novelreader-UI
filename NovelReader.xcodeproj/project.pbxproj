@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D4052F082C8A7E1900684111 /* MobileContentManager in Frameworks */ = {isa = PBXBuildFile; productRef = D4052F072C8A7E1900684111 /* MobileContentManager */; };
 		D4052F0A2C8A7E3300684111 /* MobileContentManager in Frameworks */ = {isa = PBXBuildFile; productRef = D4052F092C8A7E3300684111 /* MobileContentManager */; };
+		D4413AFB2C8DFF1E002A97B8 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = D4413AFA2C8DFF1E002A97B8 /* Localizable.xcstrings */; };
 		D49FF4742B950A7700C7EFE2 /* ChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49FF4732B950A7700C7EFE2 /* ChapterView.swift */; };
 		D4CBCC742C8682AC007DB031 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CBCC732C8682AC007DB031 /* Utility.swift */; };
 		D4CBCC762C86832C007DB031 /* NovelReader.db in Resources */ = {isa = PBXBuildFile; fileRef = D4CBCC752C86832C007DB031 /* NovelReader.db */; };
@@ -20,7 +21,7 @@
 		DE73DEE328DF99BB00EEDCFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEE228DF99BB00EEDCFA /* ContentView.swift */; };
 		DE73DEE528DF99BD00EEDCFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE73DEE428DF99BD00EEDCFA /* Assets.xcassets */; };
 		DE73DEE828DF99BD00EEDCFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE73DEE728DF99BD00EEDCFA /* Preview Assets.xcassets */; };
-		DE73DEEA28DF99BD00EEDCFA /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEE928DF99BD00EEDCFA /* PersistenceManager.swift */; };
+		DE73DEEA28DF99BD00EEDCFA /* ContentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEE928DF99BD00EEDCFA /* ContentStore.swift */; };
 		DE73DEF828DF99BE00EEDCFA /* NovelReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DEF728DF99BE00EEDCFA /* NovelReaderTests.swift */; };
 		DE73DF0228DF99BE00EEDCFA /* NovelReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DF0128DF99BE00EEDCFA /* NovelReaderUITests.swift */; };
 		DE73DF0428DF99BE00EEDCFA /* NovelReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73DF0328DF99BE00EEDCFA /* NovelReaderUITestsLaunchTests.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D4413AFA2C8DFF1E002A97B8 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		D49FF4732B950A7700C7EFE2 /* ChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterView.swift; sourceTree = "<group>"; };
 		D4CBCC732C8682AC007DB031 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		D4CBCC752C86832C007DB031 /* NovelReader.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = NovelReader.db; path = NovelReader/CoreData/NovelReader.db; sourceTree = SOURCE_ROOT; };
@@ -57,7 +59,7 @@
 		DE73DEE228DF99BB00EEDCFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE73DEE428DF99BD00EEDCFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE73DEE728DF99BD00EEDCFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DE73DEE928DF99BD00EEDCFA /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		DE73DEE928DF99BD00EEDCFA /* ContentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStore.swift; sourceTree = "<group>"; };
 		DE73DEEE28DF99BD00EEDCFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE73DEF328DF99BE00EEDCFA /* NovelReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovelReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE73DEF728DF99BE00EEDCFA /* NovelReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelReaderTests.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		DE162939290492E600DD3E36 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D4413AFA2C8DFF1E002A97B8 /* Localizable.xcstrings */,
 				D4CBCC752C86832C007DB031 /* NovelReader.db */,
 				DE73DEE428DF99BD00EEDCFA /* Assets.xcassets */,
 				DE16293A290492E600DD3E36 /* Theme.json */,
@@ -124,7 +127,7 @@
 		DE16293C2904933E00DD3E36 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				DE73DEE928DF99BD00EEDCFA /* PersistenceManager.swift */,
+				DE73DEE928DF99BD00EEDCFA /* ContentStore.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"ta-IN",
 			);
 			mainGroup = DE73DED428DF99BB00EEDCFA;
 			packageReferences = (
@@ -340,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE16293B290492E600DD3E36 /* Theme.json in Resources */,
+				D4413AFB2C8DFF1E002A97B8 /* Localizable.xcstrings in Resources */,
 				D4CBCC762C86832C007DB031 /* NovelReader.db in Resources */,
 				DE73DEE828DF99BD00EEDCFA /* Preview Assets.xcassets in Resources */,
 				DE73DEE528DF99BD00EEDCFA /* Assets.xcassets in Resources */,
@@ -389,7 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE73DEEA28DF99BD00EEDCFA /* PersistenceManager.swift in Sources */,
+				DE73DEEA28DF99BD00EEDCFA /* ContentStore.swift in Sources */,
 				DE305F2129175AAA0006D6CA /* LibaryView.swift in Sources */,
 				D49FF4742B950A7700C7EFE2 /* ChapterView.swift in Sources */,
 				DE73DEE328DF99BB00EEDCFA /* ContentView.swift in Sources */,
@@ -492,6 +497,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -547,6 +553,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
